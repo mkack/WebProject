@@ -1,0 +1,29 @@
+<div class="col-md-6 user-container">
+    <h2 style="margin: auto">Books Details</h2><br />
+    <button class="btn btn-danger" style="width:100px" (click)="addBook()"> Add Book</button><br />
+    <br />
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Author</th>
+                <th>Title</th>
+                <th>Descritpion</th>
+                <th>BookType</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books">
+                <td>{{book.Id}}</td>
+                <td>{{book.Author}}</td>
+                <td>{{book.Title}}</td>
+                <td>{{book.Descrtiption}}</td>
+                <td>{{BookType[book.BookType]}}</td>
+                <td>
+                    <button class="btn btn-success" (click)="removeBook(book)"> Delete</button>
+                    <button class="btn btn-success" (click)="updateBook(book.Id)" style="margin-left: 20px;"> Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

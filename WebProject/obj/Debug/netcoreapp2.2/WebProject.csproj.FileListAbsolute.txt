@@ -1,0 +1,51 @@
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\bin\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.deps.json
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\bin\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.runtimeconfig.json
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\bin\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.runtimeconfig.dev.json
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\bin\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.dll
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\bin\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.pdb
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\bin\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.Views.dll
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\bin\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.Views.pdb
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.RazorAssemblyInfo.cache
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.RazorAssemblyInfo.cs
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.AssemblyInfoInputs.cache
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.AssemblyInfo.cs
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.TagHelpers.input.cache
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.TagHelpers.output.cache
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.RazorCoreGenerate.cache
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\Razor\Pages\Error.cshtml.g.cs
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.RazorTargetAssemblyInfo.cache
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.RazorTargetAssemblyInfo.cs
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.Views.pdb
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.dll
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.pdb
+C:\Users\Michal\Documents\Visual Studio 2019\Projects\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.csproj.CopyComplete
+C:\GitHub\WebProject\WebProject\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\GitHub\WebProject\WebProject\bin\Debug\netcoreapp2.2\appsettings.json
+C:\GitHub\WebProject\WebProject\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\GitHub\WebProject\WebProject\bin\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.deps.json
+C:\GitHub\WebProject\WebProject\bin\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.runtimeconfig.json
+C:\GitHub\WebProject\WebProject\bin\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.runtimeconfig.dev.json
+C:\GitHub\WebProject\WebProject\bin\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.dll
+C:\GitHub\WebProject\WebProject\bin\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.pdb
+C:\GitHub\WebProject\WebProject\bin\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.Views.dll
+C:\GitHub\WebProject\WebProject\bin\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.Views.pdb
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.csprojAssemblyReference.cache
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.RazorAssemblyInfo.cache
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.RazorAssemblyInfo.cs
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.AssemblyInfoInputs.cache
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.AssemblyInfo.cs
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.TagHelpers.input.cache
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.TagHelpers.output.cache
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.RazorCoreGenerate.cache
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\Razor\Pages\Error.cshtml.g.cs
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.RazorTargetAssemblyInfo.cache
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.RazorTargetAssemblyInfo.cs
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.Views.pdb
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.dll
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\ASP.NET Core 2.2 with Angular 7.pdb
+C:\GitHub\WebProject\WebProject\obj\Debug\netcoreapp2.2\WebProject.csproj.CopyComplete

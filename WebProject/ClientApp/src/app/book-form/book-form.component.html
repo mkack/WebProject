@@ -1,0 +1,35 @@
+<div class="col-md-6 user-container">
+    <h2 *ngIf="!edit" style="margin: auto">Add Book</h2><br />
+    <h2 *ngIf="edit" style="margin: auto">Edit Book</h2><br />
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <td><label>Author:</label> </td>
+                <td><input type="text" [(ngModel)]="book.Author"></td>
+            </tr>
+            <tr>
+                <td><label>Title:</label></td>
+                <td><input type="text" [(ngModel)]="book.Title"></td>
+            </tr>
+            <tr>
+                <td><label>Description:</label></td>
+                <td><input type="text" [(ngModel)]="book.Descrtiption"></td>
+            </tr>
+            <tr>
+                <td><label>BookType:</label></td>
+                <td>
+                    <select [(ngModel)]="book.BookType">
+                        <option value="0">Crime</option>
+                        <option value="1">Fantasy</option>
+                        <option value="2">Horror</option>
+                        <option value="3">Humor</option>
+                        <option value="4">Drama</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <button *ngIf="!edit" class="btn btn-danger" style="width:100px" (click)="addBook()"> Add Book</button>
+    <button *ngIf="edit" class="btn btn-danger" style="width:100px" (click)="editBook()"> Edit Book</button>
+</div>
