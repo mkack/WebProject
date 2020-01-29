@@ -47,21 +47,39 @@ namespace WebProject.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] BookDTO book)
         {
-            _bookService.Add(book);
+            var validationResult = _bookService.Add(book);
+
+            if (!validationResult.IsSuccess)
+            {
+                return BadRequest($"{validationResult.Message}");  
+            }
+
             return Created($"book/{book.Id}", new object());
         }
 
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, [FromBody] BookDTO book)
         {
-            _bookService.Update(id, book);
+            var validationResult = _bookService.Update(id, book);
+
+            if (!validationResult.IsSuccess)
+            {
+                return BadRequest($"{validationResult.Message}");
+            }
+
             return Ok();
         }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {
-            _bookService.Remove(id);
+            var validationResult = _bookService.Remove(id);
+
+            if (!validationResult.IsSuccess)
+            {
+                return BadRequest($"{validationResult.Message}");
+            }
+
             return NoContent();
         }
     }

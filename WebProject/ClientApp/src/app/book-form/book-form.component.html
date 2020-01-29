@@ -1,35 +1,63 @@
 <div class="col-md-6 user-container">
-    <h2 *ngIf="!edit" style="margin: auto">Add Book</h2><br />
-    <h2 *ngIf="edit" style="margin: auto">Edit Book</h2><br />
-    <table class="table table-striped">
-        <tbody>
-            <tr>
-                <td><label>Author:</label> </td>
-                <td><input type="text" [(ngModel)]="book.Author"></td>
-            </tr>
-            <tr>
-                <td><label>Title:</label></td>
-                <td><input type="text" [(ngModel)]="book.Title"></td>
-            </tr>
-            <tr>
-                <td><label>Description:</label></td>
-                <td><input type="text" [(ngModel)]="book.Descrtiption"></td>
-            </tr>
-            <tr>
-                <td><label>BookType:</label></td>
-                <td>
-                    <select [(ngModel)]="book.BookType">
-                        <option value="0">Crime</option>
-                        <option value="1">Fantasy</option>
-                        <option value="2">Horror</option>
-                        <option value="3">Humor</option>
-                        <option value="4">Drama</option>
-                    </select>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <h2 *ngIf="!edit" style="margin: auto">Add Book</h2><br />
+            <h2 *ngIf="edit" style="margin: auto">Edit Book</h2><br />
+        </div>
+        <table class="table table-striped">
+            <tbody>
+                <tr>
+                    <td><label>Author:</label> </td>
+                    <td>
+                        <input type="text" formControlName="author" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.author.errors }" />
+                        <div *ngIf="submitted && f.author.errors" class="invalid-feedback">
+                            <div *ngIf="f.author.errors.required">Author is required</div>
+                            <div *ngIf="f['author'].hasError('maxlength')">Author max lenght reached. Maxiumum 30 characters</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Title:</label></td>
+                    <td>
+                        <input type="text" formControlName="title" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.title.errors }" />
+                        <div *ngIf="submitted && f.title.errors" class="invalid-feedback">
+                            <div *ngIf="f.title.errors.required">Title is required</div>
+                            <div *ngIf="f['title'].hasError('maxlength')">Title max lenght reached. Maxiumum 100 characters</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Descritpion:</label></td>
+                    <td>
+                        <input type="text" formControlName="descrtiption" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.descrtiption.errors }" />
+                        <div *ngIf="submitted && f.descrtiption.errors" class="invalid-feedback">
+                            <div *ngIf="f.descrtiption.errors.required">Descritpion is required</div>
+                            <div *ngIf="f['descrtiption'].hasError('maxlength')">Descritpion max lenght reached. Maxiumum 150 characters</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>BookType:</label></td>
+                    <td>
+                        <select formControlName="bookType" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.bookType.errors }">
+                            <option value="0">Crime</option>
+                            <option value="1">Fantasy</option>
+                            <option value="2">Horror</option>
+                            <option value="3">Humor</option>
+                            <option value="4">Drama</option>
+                        </select>
+                        <div *ngIf="submitted && f.bookType.errors" class="invalid-feedback">
+                            <div *ngIf="f.bookType.errors.required">Please select book type</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <button *ngIf="!edit" class="btn btn-danger" style="width:100px"> Add Book</button>
+        <button *ngIf="edit" class="btn btn-danger" style="width:100px"> Edit Book</button>
+    </form>
     <br />
-    <button *ngIf="!edit" class="btn btn-danger" style="width:100px" (click)="addBook()"> Add Book</button>
-    <button *ngIf="edit" class="btn btn-danger" style="width:100px" (click)="editBook()"> Edit Book</button>
+    <br />
+    <div *ngIf="addFailed" class="alert alert-dismissible alert-danger">{{error}}</div>
 </div>

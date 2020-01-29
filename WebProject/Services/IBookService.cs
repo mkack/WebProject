@@ -12,10 +12,10 @@ namespace WebProject.Services
 
         IEnumerable<BookDTO> GetBooks();
 
-        void Add(BookDTO book);
+        ValidationResultDTO Add(BookDTO book);
 
-        void Remove(Guid id);
+        ValidationResultDTO Remove(Guid id);
 
-        void Update(Guid id, BookDTO book);
+        ValidationResultDTO Update(Guid id, BookDTO book);
     }
 }
