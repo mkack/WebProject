@@ -2,7 +2,8 @@
     <h2 style="margin: auto">Books Details</h2><br />
     <button class="btn btn-danger" style="width:100px" (click)="addBook()"> Add Book</button><br />
     <br />
-    <table class="table table-striped">
+    <h2 *ngIf="books?.length === 0" style="margin: auto" class="alert alert-dismissible alert-danger">No books in database.</h2>
+    <table *ngIf="books?.length !== 0" class="table table-striped">
         <thead>
             <tr>
                 <th>Id</th>

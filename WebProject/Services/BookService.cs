@@ -20,10 +20,26 @@ namespace WebProject.Services
             _mapper = mapper;
         }
 
-        public void Add(BookDTO book)
+        public ValidationResultDTO Add(BookDTO book)
         {
+            var bookInRepo = _bookRepository.GetByTitle(book.Title);
+            if (bookInRepo != null)
+            {
+                return new ValidationResultDTO
+                {
+                    IsSuccess = false,
+                    Message = $"Book with title: {book.Title} already exist.",
+                };
+            } 
+
             var mappedBook = _mapper.Map<BookDTO, Book>(book);
             _bookRepository.Add(mappedBook);
+
+            return new ValidationResultDTO
+            {
+                IsSuccess = true,
+                Message = $"Book {book.Author} {book.Title} successfully added.",
+            };
         }
 
         public BookDTO Get(Guid id)
@@ -40,14 +56,62 @@ namespace WebProject.Services
             return _mapper.Map<IEnumerable<Book>, IEnumerable<BookDTO>>(books);
         }
 
-        public void Remove(Guid id)
+        public ValidationResultDTO Remove(Guid id)
         {
+            var bookInRepo = _bookRepository.GetAsNoTracking(id);
+
+            if (bookInRepo == null)
+            {
+                return new ValidationResultDTO
+                {
+                    IsSuccess = false,
+                    Message = $"Book not exist.",
+                };
+            }
+
             _bookRepository.Remove(id);
+
+            return new ValidationResultDTO
+            {
+                IsSuccess = true,
+                Message = $"Book successfully removed.",
+            };
         }
 
-        public void Update(Guid id, BookDTO book)
+        public ValidationResultDTO Update(Guid id, BookDTO book)
         {
+            var existingTitle = _bookRepository.GetByTitle(book.Title);
+
+            if (existingTitle != null && existingTitle.Id != id)
+            {
+                return new ValidationResultDTO
+                {
+                    IsSuccess = false,
+                    Message = $"Book with title {book.Title} already exists in db.",
+                };
+            }
+
+            var bookInRepo = _bookRepository.GetAsNoTracking(id);
+                        
+            if (bookInRepo.Author == book.Author &&
+                bookInRepo.Title == book.Title &&
+                bookInRepo.Descrtiption == book.Descrtiption &&
+                bookInRepo.BookType == book.BookType)
+            {
+                return new ValidationResultDTO
+                {
+                    IsSuccess = false,
+                    Message = "Nothing to change."
+                };
+            }
+
             _bookRepository.Update(id, _mapper.Map<BookDTO, Book>(book));
+
+            return new ValidationResultDTO
+            {
+                IsSuccess = true,
+                Message = $"Book {book.Author} {book.Title} successfully updated.",
+            };
         }
     }
 }

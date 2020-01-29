@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -24,14 +25,15 @@ namespace WebProject.Repository
 
         public Book Get(Guid id) => _context.Books.SingleOrDefault(x => x.Id == id);
 
+        public Book GetAsNoTracking(Guid id) => _context.Books.AsNoTracking().SingleOrDefault(x => x.Id == id);
+
+        public Book GetByTitle(string title) => _context.Books.AsNoTracking().SingleOrDefault(x => x.Title == title);
+
         public IEnumerable<Book> GetBooks() => _context.Books.ToList();
 
         public void Remove(Guid id)
         {
             var book = Get(id);
-
-            if (book == null)
-                throw new ArgumentNullException("Book not found");
 
             _context.Books.Remove(book);
             _context.SaveChanges();
@@ -39,11 +41,8 @@ namespace WebProject.Repository
 
         public void Update(Guid id, Book book)
         {
-            /*var bookToUpdate = _context.Books.SingleOrDefault(x => x.Id == id);
+            var bookToUpdate = _context.Books.AsNoTracking().SingleOrDefault(x => x.Id == id);
 
-            if (bookToUpdate == null)
-                throw new ArgumentNullException("Book not found");
-*/
             _context.Books.Update(book);
             _context.SaveChanges();
         }

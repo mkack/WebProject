@@ -1,0 +1,23 @@
+.alert {
+    color: #fff;
+    border-style: solid;
+    border-width: 0 1px 4px 1px;
+}
+
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-dismissible {
+    padding-right: 3.8125rem;
+}
+
+.alert-danger {
+    color: #85221c;
+    background-color: #ffd9d7;
+    border-color: #ffcac7;
+}

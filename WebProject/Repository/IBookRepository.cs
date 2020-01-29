@@ -9,6 +9,11 @@ namespace WebProject.Repository
     public interface IBookRepository
     {
         Book Get(Guid Id);
+
+        Book GetAsNoTracking(Guid id);
+
+        Book GetByTitle(string title);
+
         IEnumerable<Book> GetBooks();
 
         void Add(Book book);
